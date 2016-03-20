@@ -27,7 +27,6 @@ module.exports = function(socket) {
         var s = "SELECT * FROM binbou_sc.summary;";
         var q = mysqlConnection.query(s);
 
-        console.log(s);
         var result = [];
 
         q
@@ -38,7 +37,6 @@ module.exports = function(socket) {
             .on('result', function(camp) {
                 // it fills our array looping on each user row inside the db
                 result.push(camp);
-                console.log(result);
             })
             .on('end', function() {
                 console.log(result);
