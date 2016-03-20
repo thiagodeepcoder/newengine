@@ -14,7 +14,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // start the server
-server.listen(1986);
+server.listen(5000);
 
 
 // for dev
