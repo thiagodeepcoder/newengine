@@ -37,6 +37,6 @@ app.use(function(err, req, res, next) {
 });
 module.exports = io;
 
-console.log("server starteds");
+console.log("server started");
 
 io.sockets.on('connection', socket);
