@@ -1,0 +1,23 @@
+{
+  "apps" : [{
+    // Application #1
+    "name"        : "app",
+    "script"      : "app.js",
+    "args"        : "--toto=heya coco -d 1",
+    "watch"       : ["server", "client"],
+    "node_args"   : "--harmony",
+    "merge_logs"  : true,
+    "cwd"         : "/Users/thiagoschmitz/Github/newengine",
+    "env": {
+      "NODE_ENV": "development",
+      "AWESOME_SERVICE_API_TOKEN": "xxx"
+    },
+    "env_production" : {
+       "NODE_ENV": "production"
+    },
+    "env_staging" : {
+       "NODE_ENV" : "staging",
+       "TEST"     : true
+    }
+  }]
+}

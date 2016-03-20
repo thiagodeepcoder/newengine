@@ -1,6 +1,6 @@
     'use strict';
     angular.module('mainApp', ['ngAnimate', 'main.ctrls',
-            'ngSanitize', 'ui.router', 'ngMaterial', 'ngAria'
+            'ngSanitize', 'ui.router', 'ngMaterial', 'ngAria', 'chart.js'
         ])
         .config(routing)
         .config(theming);
