@@ -56,7 +56,7 @@
 
 
                 function getNewData() {
-                    socket.emit("requestData", {});
+                    //socket.emit("requestData", {});
 
                 }
                 $scope.series = ['Everdom', 'Urban Addict'];
